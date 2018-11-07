@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+        <link rel="stylesheet" href="overrides.css" />
+        <script type="text/javascript" src="survey.js"></script>
+        <title>CoffeeTawk</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="display-4">Question 1</h1>
+                    <p class="lead">How many cups of coffee did you buy?</p>
+                </div>
+            </div>
+            <div class="jumbotron">
+                <div class="list-group">
+                    <button type="button" id="radio0" onClick="radio_select('radio0')" class="list-group-item list-group-item-action btn-block">0</button>
+                    <button type="button" id="radio1" onClick="radio_select('radio1')" class="list-group-item list-group-item-action btn-block">1</button>
+                    <button type="button" id="radio2" onClick="radio_select('radio2')" class="list-group-item list-group-item-action btn-block">2</button>
+                    <button type="button" id="radio3" onClick="radio_select('radio3')" class="list-group-item list-group-item-action btn-block">3</button>
+                    <div class="input-group input-group-lg btn-block">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="other-field">Other</span>
+                        </div>
+                        <input type="text" id="text-field" onInput="text_entry()" class="form-control" aria-label="Other Option" aria-describedby="other-field">
+                    </div>
+                </div>
+                <br>
+                <div class="row justify-content-around">
+                    <div class="col">
+                        <button onClick="location.href='home.html'" type="button" class="btn btn-warning btn-lg btn-block">← Previous</button>
+                    </div>
+                    <div class="col">
+                        <button id="next-button" onClick="location.href='survey2.html'" type="button" class="btn btn-warning btn-lg btn-block" disabled="true">Next →</button>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </body>
+</html>

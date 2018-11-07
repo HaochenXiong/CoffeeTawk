@@ -1,0 +1,27 @@
+::selection {
+    background:#FFC107;
+}
+
+::-moz-selection {
+    background:#FFC107;
+}
+
+.container {
+    padding-top: 25pt;
+}
+
+.list-group-item.active
+{
+    background-color:#FFC107;
+    border-color:#FFC107;
+}
+
+.input-group-text.active
+{
+    background-color: #FFC107;
+}
+
+.vertical-center {
+    align-items: center;
+    display: flex;
+}
