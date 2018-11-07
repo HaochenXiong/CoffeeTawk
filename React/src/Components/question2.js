@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Button from 'react-bootstrap/lib/Button';
 
 class Question2 extends Component {
     state = {  }
@@ -14,11 +15,11 @@ class Question2 extends Component {
                 that was passed as a prop to report back to the App Component
                 which button was pressed: */}
                 <div class= "button">
-                <button class= "button1"onClick={() => this.props.buttonPressed("1")}>1</button>
-                <button onClick={() => this.props.buttonPressed("2")}>2</button>
-                <button onClick={() => this.props.buttonPressed("3")}>3</button>
-                <button onClick={() => this.props.buttonPressed("4")}>4</button>
-                <button onClick={() => this.props.buttonPressed("5")}>5</button>
+                <Button bsSize="large" onClick={() => this.props.buttonPressed("1")}>1</Button>
+                <Button bsSize="large" onClick={() => this.props.buttonPressed("2")}>2</Button>
+                <Button bsSize="large" onClick={() => this.props.buttonPressed("3")}>3</Button>
+                <Button bsSize="large" onClick={() => this.props.buttonPressed("4")}>4</Button>
+                <Button bsSize="large" onClick={() => this.props.buttonPressed("5")}>5</Button>
                 
                 </div>
             </div>

@@ -1,15 +1,21 @@
-.Header {
+.jumWord {
+  font-size: 60px;
+  text-align: center;
+  font-family: "Courier New", monospace;
+}
+
+.Word{
   font-size: 60px;
   text-align: center;
   font-family: "Courier New", monospace;
   font-weight: 20;
+  padding-top: 15px;
 }
 
 .Question{
   text-align: center;
   font-size: 40px;
   font-family: "Courier New", monospace;
-  font-weight: 20;
 }
 
 .QuestionOne{
@@ -17,6 +23,7 @@
   font-size: 20px;
   font-family: "Courier New", monospace;
   font-weight: 20;
+  margin-bottom: 25px;
 }
 
 .button{
@@ -27,6 +34,9 @@
 .Other{
   text-align: center;
   font-family: "Courier New", monospace;
+  font-size: 23px;
+  margin-top: 5px;
+  margin-bottom: 0px;
 }
 
 .form-control{
@@ -35,7 +45,8 @@
 }
   
 .Text{
-  text-align: center;
+  margin: auto;
+  width: 200px;
 }
 
 .result{
@@ -45,29 +56,49 @@
 .One{
   text-align: center;
   font-family: "Courier New", monospace;
+  font-size: 18px;
+  margin-top: 15px;
 }
 
 .Two{
   text-align: center;
   font-family: "Courier New", monospace;
+  font-size: 18px;
+  margin-top: 15px;
 }
 
 .Explain{
   text-align: center;
   font-family: "Courier New", monospace;
+  font-size: 15px;
+  margin-top: 15px; 
 }
 
 .Submit{
+  color: black;
   text-align: center;
   font-size: 15px;
   font-family: "Courier New", monospace;
   cursor: pointer;
+  margin-bottom: 300px;
 }
+
 
 #FunctionButton:hover h2{
    color: red;
-}
+  }
 
 #FunctionButton:active h2{
   margin-top: 22px;
+}
+
+
+.jumbotron{
+  margin-top: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 15px;
+  padding-bottom: 45px;
 }

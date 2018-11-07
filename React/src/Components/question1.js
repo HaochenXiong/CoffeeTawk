@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
+import Button from 'react-bootstrap/lib/Button';
 
 class Question1 extends Component {
     state = {
     }
 
-    onInput = (e) =>{
-        this.props.InputText(e.target.value)
+    buttonFunction = (val) =>{
+        document.getElementById("text-field").value = null
+        this.props.buttonPressed(val)
     }
 
 
@@ -13,24 +15,16 @@ class Question1 extends Component {
     render() {
         return (
             <div>
-                {/* This display the index of the question */}
                 <h2 class="Question">Question {this.props.number}</h2>
-                {/* This displays the actual question */}
                 <p class="QuestionOne">{this.props.question}</p>
-                {/* Here we can have as many buttons are needed for the 
-                multiple choice answers, each using the function 
-                that was passed as a prop to report back to the App Component
-                which button was pressed: */}
                 <div class="button">
-                    <button class="button1" onClick={() => this.props.buttonPressed(1)}>1</button>
-                    <button onClick={() => this.props.buttonPressed(2)}>2</button>
-                    <button onClick={() => this.props.buttonPressed(3)}>3</button>
+                    <Button bsSize="large" onClick={() => this.buttonFunction(1)}>1</Button>
+                    <Button bsSize="large" onClick={() => this.buttonFunction(2)}>2</Button>
+                    <Button bsSize="large" onClick={() => this.buttonFunction(3)}>3</Button>
                 </div>
-                <div class="Other">
-                    <span>Other</span>
-                </div>
+                <p class= "Other">Other</p>
                 <div class="Text">
-                    <input type="number"  id="text-field" onInput={this.onInput} class="form-control" aria-label="Other Option" aria-describedby="other-field">
+                    <input type="number"  id="text-field" onInput={() => this.props.buttonPressed(document.getElementById("text-field").value)} class="form-control" aria-label="Other Option" aria-describedby="other-field">
                     </input>
                 </div>
             </div>
