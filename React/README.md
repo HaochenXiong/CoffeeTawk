@@ -2,6 +2,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # CoffeeTawk
 
+This is the React version.
+
 ## Introduction:
 
 CoffeeTawk is a web app designed for temporary workers in the coffee company to collect data in different coffee shop. It is used to find the correlation betweeen the number of cups of coffee that the customer orders and their tendency to prefer takeaway or delivery.
