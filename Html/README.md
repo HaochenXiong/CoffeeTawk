@@ -13,4 +13,14 @@ CoffeeTawk is a web app designed for temporary workers in the coffee company to 
 
 3. Press "Start" to start a new survey or press "Exit" to log out.
 
-4. Choose
+4. Choose the the number of cups of coffee that the customer orders in "Question 1". If it is larger than three, you can put the number in the input box.
+
+5. Choose customer's tendency to prefer takeaway or delivery.
+
+6. Press "Restart" to quickly start a new survey or press "Submit" to end. 
+
+7. Once submitted, press "Go home" button to go back to the home page.
+
+## Link:
+
+[Heroku](https://coffee-talks.herokuapp.com)
